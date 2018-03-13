@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="cf553455-7453-48ab-865d-bc9d9a18ba23" name="remote" url="http://39.106.66.206">
+        <fileTransfer host="39.106.66.206" port="22" rootFolder="/home/yaser/apache-tomcat-9.0.6/webapps" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

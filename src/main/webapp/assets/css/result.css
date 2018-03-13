@@ -1,0 +1,22 @@
+.icon-success {
+    font-size: 150px;
+    color: #5cb85c;
+}
+
+.icon-failure{
+    font-size: 150px;
+    color: #d9534f;
+}
+#icon {
+    text-align: center;
+    margin-top: 100px;
+}
+.div_25{
+    height: 25px;
+}
+.link{
+    font-size: 16px;
+}
+.message {
+    font-size: 50px;
+}
