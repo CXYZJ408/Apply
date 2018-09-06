@@ -41,7 +41,7 @@ public class DB_operation {//数据库操作
             data[10] = student.getDorm();
             data[11] = student.getMajor();
             //SQL语句
-            String SQL = "INSERT INTO student VALUES(?,?,?,?,?,?,?,?,?,?,?)";
+             String SQL = "INSERT INTO student(name,student_id,phone,mail,qq,department,photo,introduce,sex,dorm,major) VALUES(?,?,?,?,?,?,?,?,?,?,?)";
             preparedStatement = connection.prepareStatement(SQL);
             for (int i = 1; i < 12; i++) {
                 preparedStatement.setString(i, data[i]);//语句拼接

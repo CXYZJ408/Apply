@@ -1,15 +1,9 @@
 package Service;
 
 import org.apache.commons.fileupload.FileItem;
-import org.apache.commons.fileupload.FileUploadException;
-import org.apache.commons.fileupload.disk.DiskFileItemFactory;
-import org.apache.commons.fileupload.servlet.ServletFileUpload;
 
-import javax.servlet.ServletContext;
-import javax.servlet.http.HttpServletRequest;
 import java.io.File;
 import java.util.Date;
-import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -28,15 +22,12 @@ public class UploadPicture {
      */
     public String upload(FileItem item) throws Exception {
         String separator = File.separator;//分割符号
-        String path = "/home/yaser/img";
+        String path = "/img";//会存放在tomcat所在磁盘的img文件夹下
         String filename = item.getName();
         filename = filename.substring(filename.lastIndexOf(separator) + 1);
         File file = rename(new File(path + separator + filename));
         if (!file.exists()) {
             file.getParentFile().mkdirs();
-        }
-
-        if (!file.exists()) {
             item.write(file);
         }
         item.delete();

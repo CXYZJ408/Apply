@@ -1,13 +1,12 @@
 package Service;
 
 import Beans.Student;
-import DB.DB_operation;
 import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
 
 import javax.servlet.http.HttpServletRequest;
-import java.io.File;
+
 import java.util.List;
 
 /**

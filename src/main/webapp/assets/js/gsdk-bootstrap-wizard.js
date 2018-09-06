@@ -243,6 +243,7 @@ $(document).ready(function () {
     });
 
     $('[data-toggle="wizard-checkbox"]').click(function () {
+        console.log('111');
         if ($(this).hasClass('active')) {
             $(this).removeClass('active');
             $(this).find('[type="checkbox"]').removeAttr('checked');

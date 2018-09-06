@@ -15,9 +15,9 @@ import java.sql.SQLException;
  */
 public class DB_connect {
 
-    private static final String URL = "jdbc:mysql://localhost/club";
+    private static final String URL = "jdbc:mysql://localhost:3306/club?useUnicode=true&characterEncoding=utf8";
     private static final String ROOT = "root";
-    private static final String PASSWORD = "15250823423wyX,";
+    private static final String PASSWORD = "15250823423wyX";
     private static Connection connection;
 
     public static Connection getConnection() {
